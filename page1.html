@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="bootstrap.min.js"></script>
+	<style>
+.image-hover-container {
+  overflow: hidden;
+}
+
+.image-hover-container img {
+  transition: transform 0.3s ease;
+}
+
+.image-hover-container:hover img {
+  transform: scale(1.1);
+}
+
+.box
+{
+	border: 2px solid darkgray;
+	border-radius: 50px 20px 50px 20px;
+	 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	background-color: aliceblue;
+}
+.box {
+  overflow: hidden;
+}
+
+.box img {
+  transition: transform 0.3s ease;
+
+}
+
+.box:hover img {
+  transform: scale(1.1);
+}
+
+.tes 
+{
+	padding: 30px;
+	box-shadow: 0 10px 15px rgba(0, 0, 0, 0.10); /* Apply box shadow to container */
+}
+
+
+.boxex 
+{
+	height: 350px;
+	padding-top: 50px;
+	padding-bottom: 400px;
+	text-align: center;
+	border-radius: 15px 15px 15px 15px;
+	margin-top: 40px;
+	margin-bottom: 50px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20); /* Apply box shadow to container */
+	background-color:black ;
+	color: white;
+
+}
+.boxex:hover 
+{
+	background-color: navajowhite;
+	color: black;
+
+}
+.boxex1
+{
+	height: 350px;
+	padding-top: 50px;
+	padding-bottom: 400px;
+	text-align: center;
+	border-radius: 15px 15px 15px 15px;
+	margin-top: 40px;
+	margin-bottom: 50px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20); /* Apply box shadow to container */
+	background-color: navajowhite;
+	color: black;
+}
+.boxex1:hover 
+{
+		background-color:black ;
+	color: white;
+
+}
+
+
+.footer
+{
+	padding-top: 20px;
+	padding-bottom: 30px;
+	background-color: black;
+	height: 320px;
+	color: white;
+	font-weight: bold;
+	font-style: italic;
+	  padding-left: max(40px, calc((100% - 1200px) / 2 + 20px));
+  box-sizing: border-box;
+  
+}
+
+
+</style>
+
+</head>
+<body>
+   <nav class="navbar navbar-default" style="padding-top: 18px; background-color: lightseagreen;">
+   	<div class="container">
+   		<div class="col-md-2">
+   	<div class="navbar-header" >
+   		<img src="logof.png" width="110px" style="padding-top: 10px;">
+   	</div>
+   </div>
+ 
+       <div class="col-md-6">
+   	   <ul class="nav navbar-nav" style="text align-content: left;">
+   	   	  <h1 style="font-weight: bold; font-style: italic;">furniture</h1>
+   	   	 <li><a href="page1.html" style="font-size: 20px; color: black">Home</a></li>
+   	   	 <li><a href="about.html" style="font-size: 20px; color: black">About</a></li>
+   	   	 <li><a href="service.html" style="font-size: 20px; color: black">Service</a></li>
+   	   	 <li><a href="contactus.html" style="font-size: 20px; color: black"; >Contact</a></li>
+   	   </ul>
+   	</div>
+   	<div class="col-md-4">
+   	   <ul class="nav navbar-nav navbar-right">
+   	   	   <button class="btn btn-success" data-toggle="modal" data-target="#a" style="font-size: 20px; background-color: coral; padding-top:20px">Login</button>
+                 <div id="a" class="modal fade" style="background-color: white; padding-bottom: 30px; text-align: center;" >
+      <div class="modal-dialog modal-md" >
+            <div class="modal-content" style="background-color: lightseagreen;">
+
+       <div class="modal-header">
+         <h1 class="modal-title">Register</h1>
+         <button class="close" data-dismiss="modal">&times</button>
+      </div><br><br>
+
+      <div class="modal-body">
+         UserName:<input type="text" name="" value=""><br><br><br>
+         Password:<input type="Password" name="" value=""><br>
+      </div>
+
+      <div class="modal-footer">
+         <button class="btn btn-success" data-dismiss="modal" style="background-color: coral; box-sizing:20px">Login</button>
+      </div>
+      
+   </div>
+</div>
+   	   </ul>
+   	</div>
+   	</div>
+   </div>
+</div>
+
+
+
+<div class="col-md-12">
+     <div class="carousel slide" id="myCarouel" data-ride="carousel" style="margin-bottom:0%; margin-top:0 %; ">
+<ol class="carousel-indicators"> 
+<li class="active" data-slide-to="0" data-target="#myCarouel"></li>
+<li  data-slide-to="1" data-target="#myCarouel"></li>
+<li  data-slide-to="2" data-target="#myCarouel"></li>
+</ol>
+
+<div class="carousel-inner">
+<div class="item active">
+<img src="fur3.jpg" width="120%" height="20%" >
+        
+        <div class="carousel-caption" style="text-align: left; left: 10%; top: 20%;"><h1 style="color:black; font-weight: bold; font-style: italic;">Furnish Your Dreams</h1><br><br>
+	<p style="color:black; font-size: 150%;"> Every great accomplishment begins with a dream, a spark of imagination that ignites the fire of possibility within us. But dreaming alone is not enough. To truly finish your dreams, you must bridge the gap between vision and reality.The journey starts with clarity. Take time to vividly imagine your dream, painting a detailed picture in your mind. This clear vision becomes your guiding star, illuminating the path ahead.</p><br>
+
+	<button style="background:deepskyblue; padding:10px; width: 200px; height: 50px; border-radius: 30px ";>Read More</button>
+</div>
+</div>
+
+<div class="item">
+<img src="fur2.jpg" width="100%">
+<div class="carousel-caption" style="text-align:left;left: 10%; top: 20%"><h1  style="color:black; font-weight:bold; font-style:italic;">Timeless Design, Modern Comfort</h1><br><br> 
+	<p style="font-size:150%; color:black;">At the heart of this philosophy lies the belief that true style is everlasting. Timeless design draws inspiration from the rich tapestry of history, incorporating elements that have stood the test of time. From the clean lines of mid-century modern to the ornate details of Art Deco, these influences are carefully curated to create an ambiance that feels both familiar and fresh.</p><br>
+
+	<button style="background:greenyellow; padding:10px; width: 200px; height:50px; border-radius: 30px; color:black;">Read More</button>
+</div>
+</div>
+
+<div class="item">
+<img src="fur4.jpg" width="100%">
+<div class="carousel-caption" style="text-align: left; left:10%; top: 20%;"><h1  style="color:black; font-weight:bold; font-style: italic;">Elevate Your Living Space</h1><br><br>
+	<p style="font-size:150%; color:black;">Lighting is the unsung hero of interior design. Layered lighting, including ambient, task, and accent lights, can dramatically alter the feel of a room. Invest in quality fixtures that double as decorative elements, and use lighting to highlight architectural features or prized possessions.Personalize your space with art and accessories that tell your story. Curate a collection of pieces that resonate with you, from paintings and sculptures to travel mementos and family heirlooms.</p><br>
+	<button style="background:brown; color:white; padding:10px; width: 200px; height:50px; border-radius: 30px">Read More</button>
+</div>
+</div>
+</div>
+
+<a href="#myCarouel" class="left carousel-control" data-slide="prev"></a>
+<a href="#myCarouel" class="right carousel-control" data-slide="next"></a>
+</div>
+  </div> 
+ </div>
+ </nav>
+
+ <div class="container">
+ 	 <div class="col-md-12">
+ 	 	 <center><h1 style="font-style: italic; font-weight: bold;">The Art of Functional Elegance</h1><br><br></center><p style="font-size:150%">Quality furniture is an investment in comfort and longevity. Well-crafted pieces are built to withstand daily use and can become cherished possessions that age gracefully over time. From the frame construction to the choice of upholstery, every detail contributes to the durability and aesthetic appeal of a furniture piece.Furniture: The Art of Functional Elegance Furniture is more than just functional objects that fill our spaces; it's an essential element of interior design that shapes our daily lives and reflects our personal style. From the cozy embrace of a well-worn armchair to the sleek lines of a modern dining table, furniture has the power to transform a house into a home.
+</p>
+ 	 </div>
+ 	</div><br><br>
+
+ 	<div class="container">
+ 	 <div class="col-md-6">
+ 	 	  <img src="man.jpg" width="100%"><br>
+ 	 	  <caption><center><h1 style="color:black; font-weight:bold; font-size:20px">Manhattan Collections</h1></center></caption>
+ 	 </div>
+
+ 	 <div class="col-md-6">
+ 	 	  <img src="home and cottage.jpg" width="100%"><br>
+ 	 	  <caption><center><h1 style="color:black; font-weight:bold; font-size:20px">Home and Cottage</h1><</caption>
+ 	 </div>
+     </div>
+
+     
+     <div class="container">
+     	  <center><h1 style="font-size:40px; font-weight:bold">Furniture as Art</h1></center>
+     </div><br><br>
+
+     
+    <div class="container">
+    	 <div class="row">
+     	 <div class="col-md-4">
+     	  	<p class="image-hover-container"><img src="chair.jpg" style="width: 100%;"></p>
+     	  	 <caption><h1 style="font-size:25px; font-weight:bold"><center>Chandigarh Collection</center></h1></caption><br>
+       </div>
+
+    <div class="col-md-4">
+     	  	<p class="image-hover-container"><img src="cober.jpg" style="width: 100%;"></p>
+     	  	 <caption><h1 style="font-size:25px; font-weight:bold"><center>Kobbler Collection</center></h1></caption><br>
+    </div>
+
+    <div class="col-md-4">
+     	  	<p class="image-hover-container"><img src="bed1.jpg" style="width: 100%;"></p>
+     	  	 <caption><h1 style="font-size:25px; font-weight:bold"><center>Verandah Collection</center></h1></caption><br>
+    </div>
+ </div>
+
+
+
+    <div class="row">
+    <div class="col-md-4">
+     	  	<p class="image-hover-container"><img src="so.jpg" style="width: 100%;"></p>
+     	  	 <caption><h1 style="font-size:25px; font-weight:bold"><center>Sofa Collection</center></h1></caption><br>
+    </div>
+
+       <div class="col-md-4">
+     	  	<p class="image-hover-container"><img src="drrr.jpg" style="width: 100%; height: 150%;"></p>
+     	  	 <caption><h1 style="font-size:25px; font-weight:bold"><center>Dressing Table Collection</center></h1></caption><br>
+       </div>
+
+       <div class="col-md-4">
+     	  	<p class="image-hover-container"><img src="tv units.jpg" style="width: 100%;"></p>
+     	  	 <caption><h1 style="font-size:25px; font-weight:bold"><center>Tv units Collection</center></h1></caption><br>
+       </div>
+</div>
+
+
+
+  
+        <div class="row">
+      <div class="col-md-4">
+     	  	<p class="image-hover-container"><img src="coffee.jpg" style="width: 100%;"></p>
+     	  	 <caption><h1 style="font-size:25px; font-weight:bold"><center>Coffee Tables Collection</center></h1></caption><br>
+       </div>
+
+       <div class="col-md-4">
+     	  	<p class="image-hover-container"><img src="room.jpg" style="width: 100%; height: 150%;"></p>
+     	  	 <caption><h1 style="font-size:25px; font-weight:bold"><center>Home Decor Collection</center></h1></caption><br>
+       </div>
+
+       <div class="col-md-4">
+     	  	<p class="image-hover-container"><img src="stu.jpg" style="width: 100%;"></p>
+     	  	 <caption><h1 style="font-size:25px; font-weight:bold"><center>Study table Collection</center></h1></caption><br>
+       </div>
+    </div>
+
+
+
+       <div class="row">
+ 
+      <div class="col-md-4">
+     	  	<p class="image-hover-container"><img src="diiii.jpg" style="width: 100%;"></p>
+     	  	 <caption><h1 style="font-size:25px; font-weight:bold"><center>Dinning Tables Collection</center></h1></caption><br>
+       </div>
+
+       <div class="col-md-4">
+     	  	<p class="image-hover-container"><img src="lg.jpg" style="width: 100%; height: 150%;"></p>
+     	  	 <caption><h1 style="font-size:25px; font-weight:bold"><center>Lamps&Lighting Collection</center></h1></caption><br>
+       </div>
+
+       <div class="col-md-4">
+     	  	<p class="image-hover-container"><img src="hf.jpg" style="width: 100%;"></p>
+     	  	 <caption><h1 style="font-size:25px; font-weight:bold"><center>Home Furnishing Collection</center></h1></caption><br><br>
+       </div><br><br>
+</div>
+             
+       
+
+        <div class="container">
+               <center><h1 style="color:darkgreen; font-weight:bold; font-size:40px; padding-top: 40px;" >India's Finest Online Furniture Brand</h1><br><br><center>
+               	<p style="font-size:20px">Furniture is the silent storyteller of our homes, weaving tales of comfort, style, and personal expression through every carefully chosen piece. From the cozy embrace of a well-worn armchair to the sleek lines of a modern dining table, furniture shapes the very essence of our living spaces, transforming empty rooms into vibrant, functional havens.The journey of furniture design is as old as civilization itself, evolving from simple, utilitarian objects to intricate works of art. Today's furniture landscape is a rich tapestry of styles, materials, and influences, offering something for every taste and need. Whether you're drawn to the timeless elegance of traditional designs or the bold statements of contemporary pieces, furniture allows you to curate a space that truly reflects your personality and lifestyle.</p>
+       </div><br><br>
+
+
+           <div class="container">
+           	  <div class="row">
+           	  	 <div class="col-md-6">
+           	  	 	 <p class="image-hover-container"><img src="cober.jpg" style="height:30%"></p>
+           	  	 	 <h1 style="color:red">Crafting Homes with Classic Furniture</h1>
+           	  	 	 <p style="font-size:20px">Every piece of handcrafted furniture is an artisan’s labour of love. It is their art of adding character, warmth, and authenticity to a home via the pieces of furniture. With a passion for perfection, artisans pour their expertise and creativity into every piece of furniture they craft. Whether it’s about selecting the materials, crafting details, shaping or assembling the furniture, artisans are equipped to do everything skillfully</p>
+                </div>
+                <div class="row">
+           	  	 	 <p style="font-size:20px; font-weight:bold; font-style: italic; height: 500%;"> As our lives and work habits evolve, so too does our furniture. The rise of remote work has sparked a renaissance in home office design, with ergonomic chairs and multi-functional desks taking center stage in many homes. These pieces blend seamlessly into living spaces, allowing for productivity without sacrificing style or comfort.Materials play a vital role in the character and durability of furniture. Rich woods like oak, maple, and walnut bring warmth and timeless appeal, while metals and glass add a contemporary edge. Upholstered pieces in sumptuous fabrics or supple leathers invite touch and provide endless opportunities for customization.</p>
+           	  	 	 <div class="col-md-6">
+           	  	 	 <center><p class="image-hover-container"><img src="cober.jpg" style="height:30%;border-radius: 15px 30px 45px 60px;"></p></center><br><br>
+                </div>
+                </div>
+           	  </div><br><br>
+
+
+           	    <div class="row">
+           	    	<div class="col-md-4"> 
+           	    		<div class="box">
+           	    			<center><h2>Home Furnishing</h2></center>
+           	    			<img src="hf.jpg" width="100%">
+           	    			
+           	    		</div>
+           	    	</div>
+
+           	    	<div class="col-md-4"> 
+           	    		<div class="box">
+           	    			<center><h2>Home Decor</h2></center>
+           	    			<img src="room.jpg" width="100%">
+           	    			
+           	    		</div>
+           	    	</div>
+
+           	    	<div class="col-md-4"> 
+           	    		<div class="box">
+           	    			<center><h2>Dinning Table</h2></center>
+           	    			<img src="diiii.jpg" width="100%">
+           	    			
+           	    		</div>
+           	    	</div>
+           	    	
+           	    </div>
+           	 </div><br><br><br>
+      
+
+       <div class="row">
+       	<center><h1 style="font-style:italic; font-weight: bold; ";>Smart Furniture for the Modern Home</h1></center><br><br>
+       	<center><p style="font-style:italic; font-weight: bold; font-size: 20px";>Smart furniture is characterized by its connectivity, allowing integration with Wi-Fi, Bluetooth, and smart home systems like Alexa or Google Home. Many pieces can be controlled via smartphone apps, offering unprecedented customization and control. Automation is another key feature, with furniture that can adjust settings based on user preferences, activate via motion sensors, or operate on schedules.
+         Multi-functionality is a hallmark of smart furniture, addressing the needs of urban living with space-saving designs that serve multiple purposes. Energy efficiency is also a priority, with built-in power-saving modes and smart power management systems.</p></center>
+       </div><br><br>
+
+
+        <div class="row">
+        	 <div class="col-md-6">
+        	 	     <div class="boxex">
+        	 	 	<h1 style="font-style:italic; font-weight: bold;">"Living Room Furniture"</h1><br>
+        	 	          <h3 style="font-weight: bold;"> - Sofas and couches<br><br>
+                       - Armchairs and recliners<br><br>
+                       - Coffee tables and end tables<br><br>
+                       - TV stands and entertainment centers<br><br></h3>
+                </div>
+             </div>
+
+             <div class="col-md-6">
+        	 	     <div class="boxex1">
+        	 	 	<h1 style="font-style:italic; font-weight: bold;">"Bed room Furniture"</h1><br>
+        	 	          <h3 style="font-weight: bold;"> - Beds and bed frames<br><br>
+                      - Dressers and chests of drawers<br><br>
+                      - Nightstands<br><br>
+                      - Wardrobes and armoires<br><br></h3>
+                </div>
+             </div>
+</div>
+             <div class="row">
+        	 <div class="col-md-6">
+        	 	     <div class="boxex1">
+        	 	 	<h1 style="font-style:italic; font-weight: bold;">"Dining Room Furniture"</h1><br>
+        	 	          <h3 style="font-weight: bold;"> - Dining tables<br><br>
+                       - Dining chairs<br><br>
+                       - Sideboards and buffets<br><br>
+                       - Sideboards and buffets<br><br></h3>
+                </div>
+             </div>
+
+             <div class="col-md-6">
+        	 	     <div class="boxex">
+        	 	 	<h1 style="font-style:italic; font-weight: bold;">"Home Office Furniture"</h1><br>
+        	 	          <h3 style="font-weight: bold;"> - Desks<br><br>
+                       - Office chairs<br><br>
+                       - Bookcases and shelving units<br><br>
+                       - Filing cabinets<br><br></h3>
+                </div>
+             </div>
+   </div>
+
+<nav style="background:black;">
+        <footer>
+        		<div class="row">
+        			    <div class="footer">
+                   <div class="col-md-4">
+               	           <h1>Furniture</h1>
+               	         <img src="logof.png" width="180px">
+               	         <p>© 2024 Comfort Crafted Furniture. All rights reserved.</p>
+
+                     </div>
+
+                     <div class="col-md-4">
+               	           <h1>About</h1><br>
+               	            <li style="font-size:20px; color:white;"><a href="page1.html">Home</a></li><br>
+               	            <li style="font-size:20px; color:white;"><a href="about.html">About</a></li><br>
+               	            <li style="font-size:20px; color:white;"><a href="service.html">Service</a></li><br>
+               	            <li style="font-size:20px; color:white;"><a href="contactus.html">Contactus</a></li><br>
+
+                     </div>
+
+                      <div class="col-md-4">
+               	           <h1>Have any Ques?</h1>
+               	           <button class="btn-success" style="padding: 40px 80px; color: black; bottom: 30px; padding-left: 40px";><a href="loginbutton.html">Login</a></button>
+               	         <img src="logof.png" width="100px">
+               	         <h5>Living Room | Bedroom | Dining Room | Home Office | Outdoor</h5>
+               	     
+
+                     </div>
+        			   </div>
+        		</div>
+        	</footer>
+        	
+
+
+
+
+</nav>
+        </div>
+
+        	 </div>
+        </div>
+
+
+           
+
+
+
+
+
+</div>
+</body>
+</html>

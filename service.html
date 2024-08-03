@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+   <script type="text/javascript" src="jquery.min.js"></script>
+   <script type="text/javascript" src="bootstrap.min.js"></script>
+   <style type="text/css">
+   	.ab 
+   	{
+   		 border-radius: 4000px 4000px 4000px 4000px;
+   		 padding-right: 30px;
+   		 padding: 50px;
+
+   	}
+      .img
+      {
+          border-radius: 40000px 40000px 40000px 40000px;
+          padding-right: 30px;
+          padding: 50px;
+         max-width: 100%;
+         height: auto;
+         border-image-width: 70px;
+
+
+      }
+      .offer 
+      {
+          border-radius: 50000px 50000px 50000px 50000px;
+          padding-right: 30px;
+          padding: 10px;
+
+      }
+
+      .slider-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slider {
+  display: flex;
+  width: 400%;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  width: 25%;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+button.prev, button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+button.prev {
+  left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
+
+button.prev:hover, button.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.footer
+{
+   padding-top: 20px;
+   padding-bottom: 30px;
+   background-color: black;
+   height: 320px;
+   color: white;
+   font-weight: bold;
+   font-style: italic;
+   padding-left: max(40px, calc((100% - 1200px) / 2 + 20px));
+  box-sizing: border-box;
+  
+}
+
+      
+       
+      
+
+   </style>
+</head>
+<body>
+
+   <nav class="navbar navbar-default" style="padding-top: 18px; background-color: lightseagreen;">
+      <div class="container">
+         <div class="col-md-2">
+      <div class="navbar-header" >
+         <img src="logof.png" width="110px" style="padding-top: 10px;">
+      </div>
+   </div>
+ 
+      <div class="col-md-6">
+         <ul class="nav navbar-nav" style="text align-content: left;">
+              <h1 style="font-weight: bold; font-style: italic;">furniture</h1>
+             <li><a href="page1.html" style="font-size: 20px; color: black">Home</a></li>
+             <li><a href="about.html" style="font-size: 20px; color: black">About</a></li>
+             <li><a href="service.html" style="font-size: 20px; color: black">Service</a></li>
+             <li><a href="contactus.html" style="font-size: 20px; color: black"; >Contact</a></li>
+         </ul>
+      </div>
+      <div class="col-md-4">
+         <ul class="nav navbar-nav navbar-right">
+               <button class="btn btn-success" data-toggle="modal" data-target="#a" style="font-size: 20px; background-color: coral; padding-top:20px">Login</button>
+                 <div id="a" class="modal fade" style="background-color: white; padding-bottom: 30px; text-align: center;" >
+      <div class="modal-dialog modal-md" >
+            <div class="modal-content" style="background-color: lightseagreen;">
+
+       <div class="modal-header">
+         <h1 class="modal-title">Register</h1>
+         <button class="close" data-dismiss="modal">&times</button>
+      </div><br><br>
+
+      <div class="modal-body">
+         UserName:<input type="text" name="" value=""><br><br><br>
+         Password:<input type="Password" name="" value=""><br>
+      </div>
+
+      <div class="modal-footer">
+         <button class="btn btn-success" data-dismiss="modal" style="background-color: coral; box-sizing:20px">Login</button>
+      </div>
+      
+   </div>
+</div>
+         </ul>
+      </div>
+      </div>
+   </div>
+</div>
+
+
+  <nav style="background:black;">
+       <div class="container">
+         <div class="row">
+         	<div class="col-md-5">
+               <img src="furni.jpg" width="90%"  class="img">
+               <h1 style="color: white; font-weight:bold; font-style:italic;">Enjoy discounts of up to 50% on select items.</h1>
+             </div>
+             <div class="col-md-7">
+               <img src="furni.jpg" width="90%"  class="img">
+             </div>
+             
+     </div>
+  </nav>
+</nav>
+ </div>
+</nav>
+</nav>
+
+
+    <div class="container">
+       <div class="row">
+         <div class="col-md-12">
+            <center><h1 style="font-weight:bold; font-style:italic; font-size: 40px;">Best-Sellers of the Season</h1></center><br><br>
+         </div>
+          
+       </div>
+
+
+       <div class="container">
+       <div class="row">
+         <div class="col-md-4">
+            <img src="sofaa.jpg" width="100%" class="offer">
+             <center><h1 style="font-weight:bold">Wooden sofa</h1></center>
+             <center><h4>Offer Price Rs 45,989 <br><span style=" text-decoration: line-through; color:red;">Rs 71,999 </span><span style="color: green;">36% off</span></h4></center>
+         </div>
+
+         <div class="col-md-4">
+            <img src="bed.jpg" width="100%" class="offer">
+             <center><h1 style="font-weight:bold">Bed</h1></center>
+             <center><h4>Offer Price Rs 39,499 <br><span style=" text-decoration: line-through; color:red;">Rs 99,599 </span><span style="color: green;">58% off</span></h4></center>
+         </div>
+
+         <div class="col-md-4">
+            <img src="chairss.jpg" width="100%" class="offer">
+             <center><h1 style="font-weight:bold">Chairs</h1></center>
+             <center><h4>Offer Price Rs 45,989 <br><span style=" text-decoration: line-through; color:red;">Rs 69,999 </span><span style="color: green;">34% off</span></h4></center>
+         </div>
+          
+       </div>
+
+
+
+       <div class="row">
+         <div class="col-md-4">
+            <img src="dres.jpg" width="100%" class="offer">
+             <center><h1 style="font-weight:bold">Dressing Table</h1></center>
+             <center><h4>Offer Price Rs 11,499 <br><span style=" text-decoration: line-through; color:red;">Rs 15,899 </span><span style="color: green;">28% off</span></h4></center>
+         </div>
+
+         <div class="col-md-4">
+            <img src="tvv.jpg" width="100%" class="offer">
+             <center><h1 style="font-weight:bold">Tv</h1></center>
+             <center><h4>Offer Price Rs 19,989  <br><span style=" text-decoration: line-through; color:red;">Rs 21,745 </span><span style="color: green;">36% off</span></h4></center>
+         </div>
+
+         <div class="col-md-4">
+            <img src="s.jpg" width="100%" class="offer">
+             <center><h1 style="font-weight:bold">sofa</h1></center>
+             <center><h4>Offer Price Rs 34,989 <br><span style=" text-decoration: line-through; color:red;">Rs 54,799 </span><span style="color: green;">34% off</span></h4></center>
+         </div>
+          
+       </div>
+
+
+
+
+       <div class="row">
+         <div class="col-md-4">
+            <img src="st.jpg" width="100%" class="offer">
+             <center><h1 style="font-weight:bold">Study Table</h1></center>
+             <center><h4>Offer Price Rs 10,489 <br><span style=" text-decoration: line-through; color:red;">Rs 29,999 </span><span style="color: green;">61% off</span></h4></center>
+         </div>
+
+         <div class="col-md-4">
+            <img src="bst.jpg" width="100%" class="offer">
+             <center><h1 style="font-weight:bold">Bedside Table</h1></center>
+             <center><h4>Offer Price Rs 6,799 <br><span style=" text-decoration: line-through; color:red;">Rs 14,999 </span><span style="color: green;">55% off</span></h4></center>
+         </div>
+
+         <div class="col-md-4">
+            <img src="wct.jpg" width="100%" class="offer">
+             <center><h1 style="font-weight:bold">Coffee Table</h1></center>
+             <center><h4>Offer Price Rs 45,989 <br><span style=" text-decoration: line-through; color:red;">Rs 69,999 </span><span style="color: green;">34% off</span></h4></center>
+         </div>
+          
+       </div>
+
+
+
+<div class="row">
+         <div class="col-md-4">
+            <img src="os.jpg" width="100%" class="offer">
+             <center><h1 style="font-weight:bold">Outdoor sets</h1></center>
+             <center><h4>Offer Price Rs 45,989 <br><span style=" text-decoration: line-through; color:red;">Rs 71,999 </span><span style="color: green;">36% off</span></h4></center>
+         </div>
+
+         <div class="col-md-4">
+            <img src="lig.jpg" width="100%" class="offer">
+             <center><h1 style="font-weight:bold">Lamps & Lightings</h1></center>
+             <center><h4>Offer Price Rs 11,499 <br><span style=" text-decoration: line-through; color:red;">Rs 15,899 </span><span style="color: green;">28% off</span></h4></center>
+         </div>
+
+         <div class="col-md-4">
+            <img src="chairss.jpg" width="100%" class="offer">
+             <center><h1 style="font-weight:bold">Chairs</h1></center>
+             <center><h4>Offer Price Rs 45,989 <br><span style=" text-decoration: line-through; color:red;">Rs 69,999 </span><span style="color: green;">34% off</span></h4></center>
+         </div>
+          
+       </div><br><br><br>
+       <div class="container">
+
+         <center><h1 style="font-weight:bold; font-style:italic;">A Homeowner's Guide to Selecting Furniture Types</h1></center><br>
+         <center><h3>Choosing the right furniture involves balancing style, functionality, and comfort. Focus on key pieces like sofas, dining tables, and beds to set the foundation of each room. Ensure each piece complements your home's decor and meets your practical needs for a cohesive and inviting living space.</h3></center>
+       <div class="slider-wrapper">
+    <div class="slider">
+      <div class="slides">
+        <div class="slide"><img src="r.jpg" alt="Image 1"></div>
+        <div class="slide"><img src="sam.jpg" alt="Image 2"></div>
+        <div class="slide"><img src="cen.jpg" alt="Image 3"></div>
+        <div class="slide"><img src="stool.jpg" alt="Image 4"></div>
+        <div class="slide"><img src="hds.jpg" alt="Image 1"></div>
+        <div class="slide"><img src="litestand.jpg" alt="Image 2"></div>
+        <div class="slide"><img src="hanging.jpg" alt="Image 3"></div>
+        <div class="slide"><img src="r.jpg" alt="Image 1"></div>
+        <div class="slide"><img src="sam.jpg" alt="Image 2"></div>
+        <div class="slide"><img src="cen.jpg" alt="Image 3"></div>
+        <div class="slide"><img src="ws.jpg" alt="Image 4"></div>
+        <div class="slide"><img src="tt.jpg" alt="Image 2"></div>
+      </div>
+    </div>
+    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+  </div><br><br><br><br>
+ 
+
+  <script type="text/javascript">
+      // script.js
+
+let currentIndex = 0;
+
+function moveSlide(step) {
+  const slides = document.querySelector('.slides');
+  const totalSlides = document.querySelectorAll('.slide').length;
+  currentIndex += step;
+
+  if (currentIndex < 0) {
+    currentIndex = totalSlides - 1;
+  } else if (currentIndex >= totalSlides) {
+    currentIndex = 0;
+  }
+
+  const translateX = -currentIndex * 100 / totalSlides;
+  slides.style.transform = `translateX(${translateX}%)`;
+}
+
+   </script>
+   
+
+
+   <nav style="background:black;">
+        <div class="container">
+         <div class="box">
+            <div class="row">
+                   <div class="footer">
+                   <div class="col-md-4">
+                             <h1>Furniture</h1>
+                           <img src="logof.png" width="180px">
+                           <p>© 2024 Comfort Crafted Furniture. All rights reserved.</p>
+
+                     </div>
+
+                     <div class="col-md-4">
+                             <h1>About</h1><br>
+                              <li style="font-size:20px; color:white;"><a href="page1.html">Home</a></li><br>
+                              <li style="font-size:20px; color:white;"><a href="about.html">About</a></li><br>
+                              <li style="font-size:20px; color:white;"><a href="service.html">Service</a></li><br>
+                              <li style="font-size:20px; color:white;"><a href="contactus.html">Contactus</a></li><br>
+
+                     </div>
+
+                      <div class="col-md-4">
+                             <h1>Have any Ques?</h1>
+                              <button class="btn-success" style="background-color: coral; padding:14px"><a href="loginbutton.html">Login</a></button>
+                           <img src="logof.png" width="100px">
+                           <h5>Living Room | Bedroom | Dining Room | Home Office | Outdoor</h5>
+                        </div>
+                  </div>
+            </div>
+         </div>
+         </div>
+      </nav>
+
+   
+</div>
+
+</body>
+</html>
